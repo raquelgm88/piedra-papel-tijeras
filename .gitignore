@@ -55,3 +55,6 @@ public
 
 # vscode
 .vscode
+
+# History folder
+.history
