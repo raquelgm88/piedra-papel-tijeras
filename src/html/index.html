@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Título</title>
+    <title>Piedra, Papel o Tijeras</title>
     <!-- Google Fonts
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     -->
@@ -15,27 +15,18 @@
   </head>
 
   <body class="content">
-    <div class="content__rules">
-      <h1 class="content__rules-title">
-        Escribe el número que se corresponda a la opción con la que quieras
-        jugar:
-      </h1>
-      <p class="content__rules-option">0: Piedra</p>
-      <p class="content__rules-option">1: Papel</p>
-      <p class="content__rules-option">2: Tijeras</p>
+    <h1 class="content__title">
+      Pulsa el botón de la opción con la que quieres jugar
+    </h1>
+    <div class="content__options">
+      <input type="button" class="content__options-btn js__rock" value="Piedra" id="0">
+      </input>
+      <input type="button" class="content__options-btn js__paper" value="Papel" id="1">
+      </input>
+      <input type="button" class="content__options-btn js__scissors" value="Tijeras" id="2">
+      </input>
     </div>
-    <form class="content__form">
-      <input
-        class="content__form-input js__input"
-        type="text"
-        name="option"
-        id="option"
-        value=""
-      />
-      <button class="content__form-button js__button" type="button">
-        Jugar
-      </button>
-    </form>
+    <div class="content__random js__random"></div>
     <div class="content__msg js__msg"></div>
     <script src="./assets/js/main.js"></script>
   </body>
