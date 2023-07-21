@@ -3,36 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Piedra, Papel o Tijeras</title>
-    <!-- Google Fonts
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    -->
-    <!-- Icons
-    
-    -->
+    <title>El juego de Sheldon</title>
+    <link href="https://fonts.cdnfonts.com/css/adumu-inline" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
-  <body class="content">
-    <h1 class="content__title">
-      Pulsa el botón de la opción con la que quieres jugar
+  <body>
+    <main class="main">
+    <h1 class="main__title">
+      ¡Piedra, Papel, Tijeras, Lagarto, Spock!
     </h1>
-    <div class="content__options">
-      <input type="button" class="content__options-btn js__rock" value="Piedra" id="0">
-      </input>
-      <input type="button" class="content__options-btn js__paper" value="Papel" id="1">
-      </input>
-      <input type="button" class="content__options-btn js__scissors" value="Tijeras" id="2">
-      </input>
-      <input type="button" class="content__options-btn js__lizard" value="Lagarto" id="3">
-      </input>
-      <input type="button" class="content__options-btn js__spock" value="Spock" id="4">
-      </input>
-    </div>
-    <div class="content__random js__random"></div>
-    <button type="reset" class="content__reset js__reset">Volver a jugar</button>
-    <div class="content__msg js__msg"></div>
+    <section class="main__game">
+      <div class="main__game-rules">
+        <h3 class="main__game-rules--title">¿Cómo se juega?</h3>
+        <img class="main__game-rules--img" src="./assets/images/rules.png" alt="Reglas del juego"
+        id="rules">
+      </div>
+      <div class="main__game-options">
+        <h3 class="main__game-options--title">Haz tu elección para jugar:</h3>
+        <div class="main__game-options--container">
+          <input type="button" class="main__game-options--container_btn js__rock" value="Piedra" id="0">
+          </input>
+          <input type="button" class="main__game-options--container_btn js__paper" value="Papel" id="1">
+          </input>
+          <input type="button" class="main__game-options--container_btn js__scissors" value="Tijeras" id="2">
+          </input>
+          <input type="button" class="main__game-options--container_btn js__lizard" value="Lagarto" id="3">
+          </input>
+          <input type="button" class="main__game-options--container_btn js__spock" value="Spock" id="4">
+          </input>
+        </div>
+      </div>
+    </section>
+    <section class="main__text">
+      <div class="main__text-random js__random"></div>
+      <div class="main__text-msg js__msg"></div>
+    </section>
+    <button type="reset" class="main__reset js__reset">Volver a jugar</button>
+  </main>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

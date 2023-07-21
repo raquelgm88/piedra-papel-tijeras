@@ -7,6 +7,7 @@ const paper = document.querySelector('.js__paper');
 const scissors = document.querySelector('.js__scissors');
 const lizard = document.querySelector('.js__lizard');
 const spock = document.querySelector('.js__spock');
+const reset = document.querySelector('.js__reset');
 const machineChoise = document.querySelector('.js__random');
 const msg = document.querySelector('.js__msg');
 const max = 5;
@@ -64,12 +65,20 @@ function showMachineOption () {
   machineChoise.innerHTML = choiceMsg + machine[randomNumber];
 }
 
-//Función del evento
+//Funciones de los eventos
 function handleClickButton (event) {
   event.preventDefault();
   const idBtn = parseInt(event.currentTarget.id);
   msg.innerHTML = checkChoices(idBtn);
   showMachineOption();
+}
+
+function handleClickReset (event) {
+  event.preventDefault();
+  randomNumber = getRandomNumber(max);
+  renderMachineOption();
+  msg.innerHTML = '';
+  machineChoise.innerHTML = '';
 }
 
 // EVENTOS
@@ -78,3 +87,4 @@ paper.addEventListener('click', handleClickButton);
 scissors.addEventListener('click', handleClickButton);
 lizard.addEventListener('click', handleClickButton);
 spock.addEventListener('click', handleClickButton);
+reset.addEventListener('click', handleClickReset);
