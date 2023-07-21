@@ -39,10 +39,10 @@ renderMachineOption();
 function checkChoices (id) {
   if (id === randomNumber) {
     msg.innerHTML = '¡Empate!';
-  } else if (randomNumber > id && randomNumber !== 2) {
-    msg.innerHTML = '¡Has perdido!';
-  } else if(randomNumber < id && id !== 2) {
-    msg.innerHTML = '¡Has ganado!';
+  } else if (randomNumber > id) {
+    randomNumber === 2 && id === 0 ? msg.innerHTML = '¡Has ganado!' : msg.innerHTML = '¡Has perdido!';
+  } else if(randomNumber < id && id) {
+    randomNumber === 0 && id === 2 ? msg.innerHTML = '¡Has perdido!' : msg.innerHTML = '¡Has ganado!';
   }
 }
 
