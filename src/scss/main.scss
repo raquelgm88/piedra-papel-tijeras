@@ -25,7 +25,7 @@
             width: 100%;
 
             &--title {
-                font-size: 28px;
+                font-size: 30px;
             }
 
             &--img {
@@ -41,7 +41,7 @@
             width: 100%;
 
             &--title {
-                font-size: 28px;
+                font-size: 30px;
             }
 
             &--container {
@@ -53,9 +53,71 @@
                 width: 100%;
 
                 &_btn {
-                    background-image: url("../../assets/images/paper.png");
+                    width: 120px;
+                    height: 120px;
+                    border: solid 3px;
+                    border-radius: 50%;
+                }
+            }
+
+            &--text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                width: 550px;
+                height: 350px;
+                border: solid 2px black;
+
+                background-color: black;
+
+                &-random {
+                    font-size: 25px;
+                    color: white;
+                }
+
+                &-msg {
+                    margin-top: 40px;
+                    font-size: 40px;
+                    color: white;
+                }
+
+                &-reset {
+                    margin-top: 100px;
+                    width: 250px;
+                    height: 50px;
+                    font-family: 'Adumu Inline', sans-serif;
+                    font-size: 25px;
+                    border: solid 2px;
+                    border-radius: 25px;
+                    background-color: white;
+
                 }
             }
         }
     }
+}
+
+.js__rock {
+    border-color: #ff8181;
+}
+
+.js__paper {
+    border-color: #ffdc55;
+}
+
+.js__scissors {
+    border-color: #d480ff;
+}
+
+.js__lizard {
+    border-color: #87de87;
+}
+.js__spock {
+    border-color: #80b3ff;
+}
+
+.hidden {
+    display: none;
 }

@@ -24,6 +24,8 @@ const options= {
   '4_0': 4
 };
 
+reset.classList.add('hidden');
+
 // FUNCIONES
 
 // Función para generar un número aleatorio entre 0 y 4
@@ -65,12 +67,34 @@ function showMachineOption () {
   machineChoise.innerHTML = choiceMsg + machine[randomNumber];
 }
 
+//Función para bloquear las opciones del juego
+
+function disabledBtn () {
+  rock.disabled = true;
+  paper.disabled = true;
+  scissors.disabled = true;
+  lizard.disabled = true;
+  spock.disabled = true;
+}
+
+//Función para desbloquear las opciones del juego
+
+function enabledBtn () {
+  rock.disabled = false;
+  paper.disabled = false;
+  scissors.disabled = false;
+  lizard.disabled = false;
+  spock.disabled = false;
+}
+
 //Funciones de los eventos
 function handleClickButton (event) {
   event.preventDefault();
   const idBtn = parseInt(event.currentTarget.id);
   msg.innerHTML = checkChoices(idBtn);
   showMachineOption();
+  reset.classList.remove('hidden');
+  disabledBtn();
 }
 
 function handleClickReset (event) {
@@ -79,6 +103,8 @@ function handleClickReset (event) {
   renderMachineOption();
   msg.innerHTML = '';
   machineChoise.innerHTML = '';
+  reset.classList.add('hidden');
+  enabledBtn();
 }
 
 // EVENTOS
