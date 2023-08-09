@@ -1,3 +1,5 @@
+> Nota: maquetación en desarrollo
+
 # El Juego de Sheldon - ¡PIEDRA, PAPEL, TIJERAS, LAGARTO, SPOCK!
 
 ¡Hola! Este es un proyecto personal basado en el juego del personaje de **Sheldon Cooper** en la serie **_The Big Bang Theory_**.

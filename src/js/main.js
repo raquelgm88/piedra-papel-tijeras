@@ -38,7 +38,7 @@ let randomNumber = getRandomNumber(max);
 
 // Función para pintar en la consola el número aleatorio y comprobar que funciona
 function renderMachineOption () {
-  console.log('La máquina ha elegido ' + machine[randomNumber]);
+  console.log('Sheldon ha elegido ' + machine[randomNumber]);
 }
 
 renderMachineOption();
@@ -56,14 +56,14 @@ renderMachineOption();
 
 //Función anterior mejorada
 function checkChoices(id){
-  if(randomNumber === id) return '¡Empate!';
+  if(randomNumber === id) return 'Hemos empatado ,pero mis expectativas sobre ti siguen siendo muy pobres';
   const key = randomNumber > id ? `${randomNumber}_${id}` : `${id}_${randomNumber}`;
-  return id === options[key] ? '¡Has ganado!' : 'Lo siento, has perdido';
+  return id === options[key] ? '¡Oh, porras! Me has ganado' : '¡Has perdido! ¡Zas, en toda la boca!';
 }
 
 //Función para pintar la opción de la máquina en pantalla
 function showMachineOption () {
-  const choiceMsg = 'La máquina ha elegido: ';
+  const choiceMsg = 'Sheldon ha elegido: ';
   machineChoise.innerHTML = choiceMsg + machine[randomNumber];
 }
 
