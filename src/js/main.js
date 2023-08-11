@@ -56,7 +56,7 @@ renderMachineOption();
 
 //Función anterior mejorada
 function checkChoices(id){
-  if(randomNumber === id) return 'Hemos empatado ,pero mis expectativas sobre ti siguen siendo muy pobres';
+  if(randomNumber === id) return 'Enhorabuena, hemos empatado';
   const key = randomNumber > id ? `${randomNumber}_${id}` : `${id}_${randomNumber}`;
   return id === options[key] ? '¡Oh, porras! Me has ganado' : '¡Has perdido! ¡Zas, en toda la boca!';
 }
