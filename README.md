@@ -17,7 +17,7 @@ Una vez que pulse el usuario sobre una de las imágenes, en la pizarra inferior 
 
 ## Desarrollo
 
-Este juego lo he desarrollado con HTML5, SASS y JavaScript. Siguiendo los principios de **diseño _responsive_** y usando el marco de trabajo **_mobile first_**.
+Este juego lo he desarrollado con HTML5, SASS y JavaScript. Siguiendo los principios de **diseño _responsive_**. Sólo está maquetado para la versión _desktop_.
 
 Primero he programado unas funciones que hacen que la máquina escoja una opción al azar según se entra en la página web y cuando el usuario pulsa el botón de "Volver a jugar". La opción escogida la podemos ver en la consola de las DevTools del navegador.
 
